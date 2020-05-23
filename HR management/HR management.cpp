@@ -1,14 +1,18 @@
 ﻿#include "PCH.h"
-#include "Employee.h"
+#include "Menu.h"
 
 int main()
 {
 	// Start ->
-	setlocale(LC_ALL, "rus");
-	Employee e;
-	e.displayEmployee();
-
+	Menu m;
+	char choice = 'n';
+	do {
+		system("cls");
+		m.displayMenu();
+		std::cout << "  Do you want to continue? (y/n) -> ";
+		std::cin >> choice;
+	} while (choice == 'y');
 	// Finish ->
-	std::cout << "\n> Программа завершена (0_0) " << std::endl;
+	std::cout << "\n> Programm finished (0_0) " << std::endl;
 	return 0;
 }

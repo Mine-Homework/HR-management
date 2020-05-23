@@ -12,9 +12,19 @@ Employee::Employee(std::string name, std::string surname, std::string typeOfWork
 
 void Employee::displayEmployee() const
 {
-	std::cout << "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=" << std::endl;
+	std::cout << "\n  =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=" << std::endl;
 	std::cout << "  > " << name << "  " << surname << std::endl;
 	std::cout << "  Type of work -> " << typeOfWork << std::endl;
 	std::cout << "  Age -> " << age << " years old" << std::endl;
 	std::cout << "  Salary -> " << salary << " $" << std::endl;
+}
+
+std::string Employee::getName()
+{
+	return name;
+}
+
+double Employee::getSalary()
+{
+	return salary;
 }
